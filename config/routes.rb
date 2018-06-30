@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categories
   resources :products
   resources :people
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
